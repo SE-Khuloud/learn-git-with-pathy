@@ -1,0 +1,50 @@
+# What I Learned: Terminal & Git
+
+## Summary
+
+- I learned what the **terminal** is and how to use it to control my computer.
+- I learned what **Git** is, how to link it to the terminal, and the commands used to work with it.
+- I learned how to set up a **workspace** and create projects.
+
+It is very useful and easy to learn.
+
+---
+
+## Basic Terminal Commands
+
+```bash
+pwd              # show the current folder
+ls               # list files and folders
+cd folder_name   # enter a folder
+cd ..            # go back one level
+mkdir my_project # create a new folder
+touch file.txt   # create a new file
+```
+
+## Basic Git Commands
+
+```bash
+# One-time setup
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+# Start a project
+git init                      # create a new repository
+git clone <repository-url>    # copy an existing repository
+
+# Daily workflow
+git status                    # see changed files
+git add .                     # stage all changes
+git commit -m "Your message"  # save changes with a message
+git log                       # view commit history
+
+# Working with GitHub
+git remote add origin <repository-url>  # link to a remote repo
+git push -u origin main                 # upload your commits
+git pull                                # download the latest changes
+
+# Branches
+git branch                    # list branches
+git checkout -b new_branch    # create and switch to a new branch
+git merge new_branch          # merge a branch into the current one
+```
